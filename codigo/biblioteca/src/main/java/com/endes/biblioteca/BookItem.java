@@ -8,8 +8,8 @@ public class BookItem extends Book{
 	private String barcode;
 	private String tag;
 	private Boolean isReferenceOnly;
-	private boolean isReserved=false;
-	private boolean isBorrowed=false;
+	private Boolean isReserved=false;
+	private Boolean isBorrowed=false;
 	
 	public BookItem(String isbn, String title, List<Author> author, String summary, String publisher,
 			Integer publication_date, Integer number_of_pages, String language) {
@@ -37,7 +37,7 @@ public class BookItem extends Book{
 		return isReferenceOnly;
 	}
 
-	public void setIsReferenceOnly(boolean isReferenceOnly) {
+	public void setIsReferenceOnly(Boolean isReferenceOnly) {
 		this.isReferenceOnly = isReferenceOnly;
 	}
 
@@ -45,7 +45,7 @@ public class BookItem extends Book{
 		return isReserved;
 	}
 
-	public void setIsReserved(boolean isReserved) {
+	public void setIsReserved(Boolean isReserved) {
 		this.isReserved = isReserved;
 	}
 
@@ -56,7 +56,6 @@ public class BookItem extends Book{
 	public void setIsBorrowed(Boolean isBorrowed) {
 		this.isBorrowed = isBorrowed;
 	}
-
 	
 		
 	

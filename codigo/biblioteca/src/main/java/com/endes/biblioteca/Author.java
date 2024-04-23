@@ -1,8 +1,12 @@
 package com.endes.biblioteca;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Author {
     private String name;
     private String biography;
+    private List<Book> written =new ArrayList<Book>();
 	public String getName() {
 		return name;
 	}

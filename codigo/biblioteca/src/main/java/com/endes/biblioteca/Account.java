@@ -9,13 +9,8 @@ public class Account {
 	private String history;
 	private Date opened;
 	private AccounState state;
-	private List<BookItem> books =new ArrayList<>();
-	public void reserveBook() {
-		((BookItem) books).setIsReserved(true);
-	}
-	public void borrowBook() {
-		((BookItem) books).setIsBorrowed(true);
-	}
+	private BookItem [] borrowed =new BookItem[12];
+	private BookItem [] reserved =new BookItem[3];
 	
 	
 }
